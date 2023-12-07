@@ -1,0 +1,246 @@
+* {
+    padding: 0;
+    margin: 0;
+    transition: all .3s ease;
+    user-select: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+
+header h2 {
+    line-height: 60px;
+    color: white;
+    padding: 0 50px 0 50px;
+}
+
+header ul {
+    flex: 1;
+    justify-content: flex-end;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    color: white;
+}
+
+header ul li {
+    line-height: 60px;
+    padding: 0 20px 0 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+header ul li i {
+    /* position: absolute; */
+    left: 0;
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0;
+    background-color: white;
+    margin: 0 auto;
+}
+
+header ul li:hover i {
+    width: 100%;
+}
+
+header ul li:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.el-dropdown-link i,
+.rightPancel i {
+    padding: 10px;
+    margin: 0 10px 0 10px;
+    transition: all .3s ease;
+    border-radius: 10%;
+    color: white;
+}
+
+.el-dropdown-link i:hover,
+.rightPancel i:hover {
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.rightPancel .el-icon-search {
+    text-decoration: none;
+    font-size: 24px;
+    color: white;
+}
+
+.el-dropdown-menu .el-dropdown-menu__item:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.content ul {
+    margin-top: 40px;
+    list-style: none;
+    padding: 5px;
+}
+
+.content ul a {
+    color: white;
+}
+
+.content ul li {
+    width: 100%;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.551);
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.content ul li:hover {
+    box-shadow: 0 0 5px white;
+}
+
+.content ul li img {
+    height: 190px;
+    min-width: 300px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.content ul li .right {
+    color: rgb(224, 223, 223);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+    padding-right: 30px;
+}
+
+.content ul li .right .top {
+    width: 100%;
+    margin: 10px 50px 10px 0;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.content ul li .right .center {
+    flex: 1;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    overflow: hidden;
+}
+
+.content ul li .right .bottom {
+    margin-bottom: 20px;
+}
+
+.nodata {
+    height: 50%;
+    text-align: center;
+    font-size: x-large;
+    /* background-color: red; */
+}
+
+
+/* 搜索 */
+
+div.searchPage {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 57, 57);
+    text-align: center;
+    color: white;
+    z-index: 99999999999;
+}
+
+div.searchPage div.searchBox {
+    width: 60%;
+    margin: 20% auto;
+}
+
+div.searchPage a.close {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: medium;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 20px 30px 0 0;
+}
+
+div.searchPage a.close:hover {
+    color: red;
+}
+
+div.searchPage div.searchBox div.editbox {
+    display: flex;
+    background-color: red;
+}
+
+div.searchPage div.searchBox div.editbox input {
+    width: 100%;
+    height: 45px;
+    text-indent: 10px;
+    border: none;
+    background-color: rgb(119, 118, 118);
+    box-shadow: 0 0 2px grey;
+    color: rgb(230, 224, 224);
+    border-right: 1px solid grey;
+}
+
+div.searchPage div.searchBox div.editbox input::-webkit-input-placeholder {
+    color: rgb(230, 224, 224);
+}
+
+div.searchPage div.searchBox div.editbox input:-moz-placeholder {
+    color: rgb(230, 224, 224);
+}
+
+div.searchPage div.searchBox div.editbox input::-moz-placeholder {
+    color: rgb(230, 224, 224);
+}
+
+div.searchPage div.searchBox div.editbox input:-ms-input-placeholder {
+    color: rgb(230, 224, 224);
+}
+
+div.searchPage div.searchBox div.editbox input:focus {
+    outline: none;
+}
+
+div.searchPage div.searchBox div.editbox button.enter {
+    width: 100px;
+    background-color: rgb(119, 118, 118);
+    border: 0;
+    color: rgb(230, 224, 224);
+}
+
+div.searchPage div.searchBox select.search-option {
+    display: none;
+}
